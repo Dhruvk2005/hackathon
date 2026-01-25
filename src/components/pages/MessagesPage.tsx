@@ -75,7 +75,7 @@ export function MessagesPage() {
     <div className="min-h-screen pb-12">
       <div className="w-full px-6 pt-8">
         <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-3 h-[600px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 h-[600px]">
             {/* Chat List */}
             <div className="border-r border-slate-200">
               <div className="p-4 border-b border-slate-200">
@@ -85,12 +85,12 @@ export function MessagesPage() {
                     <MessageCircle className="w-5 h-5" />
                   </button>
                 </div>
-                <div className="relative">
-                  <Search className="w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400" />
+                <div className="relative mr-2">
+                  <Search className="w-4 h-4 absolute left-3  top-1/2 transform -translate-y-1/2 text-slate-400" />
                   <input
                     type="text"
                     placeholder="Search conversations..."
-                    className="w-full pl-10 pr-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className="w-full pl-10 pr-8 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                   />
                 </div>
               </div>
@@ -132,15 +132,15 @@ export function MessagesPage() {
             </div>
 
             {/* Chat Area */}
-            <div className="md:col-span-2 flex flex-col">
+            <div className="bg-[red] w-full">
               {selectedChatData ? (
                 <>
                   {/* Chat Header */}
-                  <div className="p-4 border-b border-slate-200">
+                  <div className="p-4 bg-[blue] border-b border-slate-200">
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-3">
+                      <div className="flex  items-center gap-3">
                         <div className="relative">
-                          <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${selectedChatData.avatarColor} flex items-center justify-center text-white font-semibold`}>
+                          <div className={`w-0 h-10 rounded-full bg-gradient-to-br ${selectedChatData.avatarColor} flex items-center justify-center text-white font-semibold`}>
                             {selectedChatData.avatar}
                           </div>
                           {selectedChatData.online && (
