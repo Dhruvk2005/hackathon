@@ -181,7 +181,7 @@ export function GamificationPage() {
 
   return (
     <div className="min-h-screen pb-12">
-      <div className="max-w-6xl mx-auto px-6 pt-8">
+      <div className="w-full px-6 pt-8">
         {/* Header Stats */}
         <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

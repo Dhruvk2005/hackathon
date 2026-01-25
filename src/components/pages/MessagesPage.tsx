@@ -73,7 +73,7 @@ export function MessagesPage() {
 
   return (
     <div className="min-h-screen pb-12">
-      <div className="max-w-7xl mx-auto px-6 pt-8">
+      <div className="w-full px-6 pt-8">
         <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-3 h-[600px]">
             {/* Chat List */}

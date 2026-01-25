@@ -50,12 +50,14 @@ export default function App() {
   const showNavAndFooter = currentPage !== 'landing' && currentPage !== 'onboarding' && currentPage !== 'privacy-setup';
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 flex">
       {showNavAndFooter && <Navbar currentPage={currentPage} onNavigate={setCurrentPage} />}
-      <main className={showNavAndFooter ? '' : ''}>
-        {renderPage()}
-      </main>
-      {showNavAndFooter && <Footer />}
+      <div className={`flex-1 ${showNavAndFooter ? '' : ''}`}>
+        <main className="min-h-[calc(100vh-400px)]">
+          {renderPage()}
+        </main>
+        {showNavAndFooter && <Footer />}
+      </div>
     </div>
   );
 }

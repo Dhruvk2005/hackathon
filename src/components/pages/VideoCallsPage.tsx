@@ -189,7 +189,7 @@ export function VideoCallsPage() {
 
   return (
     <div className="min-h-screen pb-12">
-      <div className="max-w-6xl mx-auto px-6 pt-8">
+      <div className="w-full px-6 pt-8">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-slate-800 mb-2">Video Calls</h1>
           <p className="text-slate-600">Connect securely with privacy-first video calling</p>

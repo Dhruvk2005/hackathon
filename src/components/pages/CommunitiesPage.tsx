@@ -93,7 +93,7 @@ export function CommunitiesPage() {
 
   return (
     <div className="min-h-screen pb-12">
-      <div className="max-w-7xl mx-auto px-6 pt-8">
+      <div className="w-full px-6 pt-8">
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-slate-900 mb-2">Communities</h1>

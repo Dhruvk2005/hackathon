@@ -46,7 +46,7 @@ export function ProfilePage() {
 
   return (
     <div className="min-h-screen pb-12">
-      <div className="max-w-6xl mx-auto px-6 pt-8">
+      <div className="w-full px-6 pt-8">
         {/* Profile Header */}
         <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden mb-8">
           {/* Cover */}

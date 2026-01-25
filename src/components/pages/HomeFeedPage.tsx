@@ -51,7 +51,7 @@ export function HomeFeedPage() {
 
   return (
     <div className="min-h-screen pb-12">
-      <div className="max-w-3xl mx-auto px-6 pt-8">
+      <div className="w-full px-6 pt-8">
         {/* Post Creation */}
         <div className="bg-white rounded-2xl p-6 shadow-md border border-slate-200 mb-6">
           <div className="flex gap-4">
